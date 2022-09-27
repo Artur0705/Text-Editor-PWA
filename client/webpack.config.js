@@ -27,8 +27,8 @@ module.exports = () => {
         display: "standalone",
         background_color: "#1e1e1e",
         theme_color: "#1e1e1e",
-        start_url: "/",
-        publicPath: "/",
+        start_url: "./",
+        publicPath: "./",
         fingerprints: false,
         inject: true,
         icons: [
@@ -41,7 +41,7 @@ module.exports = () => {
       }),
       new InjectManifest({
         swSrc: "./src-sw.js",
-        swDest: "service-worker.js",
+        swDest: "src-sw.js",
       }),
     ],
 
